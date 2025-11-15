@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', cursive, sans-serif;
+            background-color: #1a1a1a;
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f4f4f4;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            padding: 40px;
+            gap: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+
+        .content {
+            flex: 1 1 500px;
+            background-color: #2c2c2c;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
+            background-color: rgba(44, 44, 44, 0.85);
+            /* Slight transparency */
+        }
+
+        .visual {
+            flex: 1 1 500px;
+            position: relative;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .background-block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('retro_about.png');
+            /* Replace with actual image */
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            opacity: 0.85;
+            /* Match left panel transparency */
+            border-radius: 12px;
+            /* Beveled edges */
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+            /* Inner shadow for depth */
+        }
+
+        .overlay-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 250px;
+            opacity: 0.9;
+            /* Slight transparency */
+            border-radius: 8px;
+            image-rendering: pixelated;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 5px #00ffff);
+        }
+
+        .overlay-text {
+            margin-top: 15px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffcc00;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #000;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .overlay-text {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #ffcc00;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #000;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>About RetroGames</h1>
+                <p>RetroGames is a platform dedicated to bringing you the best in classic gaming experiences.
+                    Our mission is to preserve the nostalgia of retro games while providing modern gamers with
+                    access to timeless titles. Whether you're a seasoned gamer or new to the world of retro gaming,
+                    RetroGames has something for everyone.</p>
+
+                <h2>Experience the following from us</h2>
+                <ul>
+                    <li>A vast library of classic games from various genres and platforms.</li>
+                    <li>User-friendly interface for easy navigation and game discovery.</li>
+                    <li>Regular updates and new game additions to keep the experience fresh.</li>
+                    <li>Community features to connect with fellow retro gaming enthusiasts.</li>
+                    <li>Support for multiple platforms, including PC, consoles, and mobile devices.</li>
+                </ul>
+
+                <h3>For enquiry talk to us</h3>
+                <textarea placeholder="What is your enquiry?"></textarea>
+            </div>
+
+
+
+            <div class="visual">
+                <div class="background-block">
+                    <div class="overlay-content">
+                        <img src="Retro_logo.png" alt="RetroGames Logo" class="logo">
+                        <div class="overlay-text">Relive the classics. Play your way.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Press Start 2P', cursive, sans-serif;
+            background-color: #1a1a1a;
+            background-image: url('Retro_about_background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(44, 44, 44, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .contact-panel {
+            flex: 1 1 500px;
+            background-color: rgba(44, 44, 44, 0.85);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        .visual-panel {
+            flex: 1 1 400px;
+            background-image: url('Retro_Games_icon.jpg');
+            /* Replace with actual image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+            opacity: 0.85;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #ffcc00;
+            border-radius: 6px;
+            font-family: inherit;
+            margin-bottom: 15px;
+            box-shadow: 0 0 5px #000;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        button {
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            border: none;
+            padding: 12px 20px;
+            font-family: inherit;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 0 5px #000;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contact-panel">
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, feedback, or inquiries, feel free to reach out to us through the following
+                    channels:</p>
+
+                <ul>
+                    <li><strong>Email:</strong> support@retrogames.com</li>
+                    <li><strong>Phone:</strong> +254 712 345 678</li>
+                    <li><strong>Address:</strong> Pixel Tower, Level 3, Arcade Street, Neo City</li>
+                </ul>
+
+                <h3>Quick Contact</h3>
+                <form>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+254..."><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Type your message here..."></textarea><br><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="visual-panel">
+            <!-- Optional: Add logo, pixel art, or themed background here -->
+        </div>
+    </div>
+</body>
+
+
+
+
+
+</html>

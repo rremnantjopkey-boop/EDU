@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Games</title>
+    <link rel="icon" type="image/webp" href="games/105.webp">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e0e0e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1c1c1c;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #00ffc3;
+            margin: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #00ffc3;
+        }
+
+        #searchInput {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            width: 250px;
+            outline: none;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .game {
+            background: #1b1b1b;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 150px;
+            text-align: center;
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00ffc3;
+        }
+
+        .game img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game p {
+            margin: 10px 0;
+            color: #00ffc3;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Retro Games</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Games</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <input type="text" id="searchInput" placeholder="Search games..." onkeyup="searchGames()">
+    </header>
+
+    <main>
+        <div class="gallery" id="gallery">
+            <div class="game" data-title="Super Mario Bros">
+                <a href="games info/1.html"><img src="games/1.jpg" alt="Super Mario Bros"></a>
+                <p>Super Mario Bros</p>
+            </div>
+
+            <div class="game" data-title="Pac-Man">
+                <a href="games info/2.html"><img src="games/2.jpg" alt="Pac-Man"></a>
+                <p>Pac-Man</p>
+            </div>
+
+            <div class="game" data-title="Space Invaders">
+                <a href="games info/3.html"><img src="games/3.webp" alt="Space Invaders"></a>
+                <p>Space Invaders</p>
+            </div>
+
+            <div class="game" data-title="Donkey Kong">
+                <a href="games info/4.html"><img src="games/4.jpg" alt="Donkey Kong"></a>
+                <p>Donkey Kong</p>
+            </div>
+
+            <div class="game" data-title="Tetris">
+                <a href="games info/5.html"><img src="games/5.jpg" alt="Tetris"></a>
+                <p>Tetris</p>
+            </div>
+
+            <div class="game" data-title="Street Fighter II">
+                <a href="games info/6.html"><img src="games/6.webp" alt="Street Fighter II"></a>
+                <p>Street Fighter II</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function searchGames() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const games = document.querySelectorAll('.game');
+
+            games.forEach(game => {
+                const title = game.getAttribute('data-title').toLowerCase();
+                game.style.display = title.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
